@@ -1,13 +1,11 @@
-package edu.esprit.ecommercejee.ejb.domain;
+package edu.esprit.ecommerceproject.ejb.entities;
 
 import java.io.Serializable;
-import java.lang.String;
+
 import javax.persistence.*;
 
-/**
- * Entity implementation class for Entity: Review
- *
- */
+import edu.esprit.ecommerceproject.ejb.entities.Administrator;
+
 @Entity
 
 public class Review implements Serializable {
@@ -17,6 +15,10 @@ public class Review implements Serializable {
 	private int IdReview;
 	private String Subject;
 	private static final long serialVersionUID = 1L;
+	
+
+
+	
 
 	public Review() {
 		super();
@@ -37,3 +39,4 @@ public class Review implements Serializable {
 	}
    
 }
+
